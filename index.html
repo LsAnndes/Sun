@@ -5,6 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sun</title>
 <link rel="stylesheet" type="text/css" href="styles.css">
+<script>
+    function preloadImages() {
+        const images = [
+            'sun.gif',
+            'sun2.gif',
+            'sun3.gif',
+            'sun4.gif',
+            'sun5.gif',
+            'sun6.gif'
+        ];
+    
+        images.forEach(image => {
+            const img = new Image();
+            img.src = image;
+        });
+    }
+    
+    document.addEventListener('DOMContentLoaded', preloadImages);
+    </script>    
 </head>
 <body>
     <div id="titlecontainer">
@@ -15,9 +34,9 @@
     <img class="button" src="beach.png" onclick="changeGif('sun.gif')" alt="Beach">
     <img class="button" src="snow.png" onclick="changeGif('sun2.gif')" alt="Snow">
     <img class="button" src="bird.png" onclick="changeGif('sun4.gif')" alt="Bird">
-    <img class="button" src="city.png" onclick="changeGif('sun3.gif')"  alt="City">
+    <img class="button" src="city.png" onclick="changeGif('sun3.gif')" alt="City">
     <img class="button" src="window.png" onclick="changeGif('sun5.gif')" alt="Window">
-    <img class="button" src="cloud.png" onclick="changeGif('sun6.gif')"  alt="Cloud">
+    <img class="button" src="cloud.png" onclick="changeGif('sun6.gif')" alt="Cloud">
     </div>      
     <div id="gifContainer">
         <img id="staticImage" src="first.png" alt="Sun">
